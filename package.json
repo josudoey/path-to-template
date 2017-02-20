@@ -4,7 +4,7 @@
   "description": "provide a parse function by path-to-regexp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover _mocha  --print both"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/josudoey/path-to-params#readme",
   "dependencies": {
     "path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
   }
 }
