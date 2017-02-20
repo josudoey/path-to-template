@@ -1,0 +1,29 @@
+{
+  "name": "path-to-params",
+  "version": "0.0.0",
+  "description": "provide a parse function by path-to-regexp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josudoey/path-to-params.git"
+  },
+  "keywords": [
+    "path",
+    "regexp",
+    "match",
+    "params",
+    "utility"
+  ],
+  "author": "JoeyFang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josudoey/path-to-params/issues"
+  },
+  "homepage": "https://github.com/josudoey/path-to-params#readme",
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  }
+}
