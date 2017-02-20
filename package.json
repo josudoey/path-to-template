@@ -1,6 +1,6 @@
 {
   "name": "path-to-params",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "provide a parse function by path-to-regexp",
   "main": "index.js",
   "scripts": {
