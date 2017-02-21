@@ -1,14 +1,14 @@
 {
-  "name": "path-to-params",
-  "version": "0.0.2",
-  "description": "provide a parse function by path-to-regexp",
+  "name": "path-to-template",
+  "version": "0.0.3",
+  "description": "provide a template by path-to-regexp",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha  --print both"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josudoey/path-to-params.git"
+    "url": "git+https://github.com/josudoey/path-to-template.git"
   },
   "keywords": [
     "path",
@@ -20,9 +20,9 @@
   "author": "JoeyFang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/josudoey/path-to-params/issues"
+    "url": "https://github.com/josudoey/path-to-template/issues"
   },
-  "homepage": "https://github.com/josudoey/path-to-params#readme",
+  "homepage": "https://github.com/josudoey/path-to-template#readme",
   "dependencies": {
     "path-to-regexp": "^1.7.0"
   },

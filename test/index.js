@@ -1,10 +1,12 @@
 /* eslint-env node, mocha */
 
 var assert = require('assert');
-var path2params = require('../');
+var pathT = require('../');
 
-describe('base function', function () {
-  var parse = path2params('/:a+/:b+');
+describe('template', function () {
+  var tpl = pathT('/:a+/:b+');
+  var parse = tpl.parse;
+  var expand = tpl.expand;
   it('match', function () {
     var params = parse('/hello/world');
     assert.ok(params);
@@ -42,6 +44,14 @@ describe('base function', function () {
       a: 'hello ',
       b: ' world'
     });
+  });
+
+  it('expand', function () {
+    var path = expand({
+      a: 'hello',
+      b: 'world'
+    });
+    assert.equal(path, '/hello/world');
   });
 
 });

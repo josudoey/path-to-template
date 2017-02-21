@@ -1,19 +1,22 @@
-# path-to-params
+# path-to-template
 
 ## Installation
 
 ```bash
-$ npm install --save path-to-params
+$ npm install --save path-to-template
 ```
 
 ## Example
 
 ```js
-var path2params = require('path-to-params');
-var parse = path2params('/:a+/:b+');
-var params = parse('/hello/world');
+var pathT = require('path-to-template');
+var tpl = pathT('/:a+/:b+');
+var params = tpl.parse('/hello/world');
 console.log(params);
+var path = tpl.expand(params);
+console.log(path);
 
 // Output:
 // { a: 'hello', b: 'world' }
+// /hello/world
 ```
